@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil singkat seorang mahasiswa Teknik Informatika">
+    <title>Profil Mahasiswa Teknik Informatika</title>
+</head>
+<body>
+    <header>
+        <h1>Profil Saya</h1>
+    </header>
+    
+    <nav>
+        <a href="#tentang-saya">Tentang Saya</a> |
+        <a href="#pendidikan">Pendidikan</a> |
+        <a href="#kontak">Kontak</a>
+    </nav>
+    
+    <section id="tentang-saya">
+        <h2>Tentang Saya</h2>
+        <img src="assets/foto.png" alt="Foto Profil" width="150px">
+        <p>Halo, saya adalah mahasiswa Teknik Informatika yang sedang menempuh pendidikan di Institut Teknologi Sumatera dengan minat khusus pada teknologi dan transformasi digital. Saya juga memiliki pengalaman dalam pengembangan game sederhana menggunakan Python dan OOP.</p>
+    </section>
+
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Institusi</th>
+                    <th>Jurusan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020 - Sekarang</td>
+                    <td>Institut Teknologi Sumatera</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <td>2017 - 2020</td>
+                    <td>SMA Kristen 1 Metro</td>
+                    <td>IPA</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Profil Mahasiswa Teknik Informatika</p>
+    </footer>
+</body>
+</html>

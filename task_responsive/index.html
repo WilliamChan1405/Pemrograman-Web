@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout Responsif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-text">MyPortfolio</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <h1>Selamat Datang di Portofolio Saya</h1>
+                <p> William Chan | Mahasiswa Teknik Informatika | Enthusiast Teknologi</p>
+                <a href="#contact" class="cta-button">Hubungi Saya</a>
+            </section>
+
+            <section id="about">
+                <h2>Tentang Saya</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Pendidikan</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>Saya sedang menempuh pendidikan di Teknik Informatika di Institut Teknologi Sumatera</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Minat</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>Teknologi dan Transformasi Digital</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Pengalaman</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>Pengembangan Game Sederhana dengan Python dan OOP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Keahlian Saya</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="icon-python"></i>
+                        <h3>Python</h3>
+                        <p>Pengembangan aplikasi dan game dengan Python</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-oop"></i>
+                        <h3>OOP</h3>
+                        <p>Pemrograman berorientasi objek</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-gamedev"></i>
+                        <h3>Game Development</h3>
+                        <p>Pembuatan game sederhana</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-tech"></i>
+                        <h3>Teknologi Digital</h3>
+                        <p>Pemahaman mendalam tentang transformasi digital</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Proyek Saya</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Game Python</h3>
+                        <p>Game sederhana menggunakan Python dan konsep OOP</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Aplikasi Web</h3>
+                        <p>Pengembangan aplikasi web responsive</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Analisis Data</h3>
+                        <p>Proyek analisis data menggunakan Python</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>UI/UX Design</h3>
+                        <p>Desain antarmuka pengguna untuk aplikasi mobile</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Hubungi Saya</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea placeholder="Pesan Anda" required></textarea>
+                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Teknik Informatika Institut Teknologi Sumatera</p>
+        </footer>
+    </div>
+</body>
+</html>

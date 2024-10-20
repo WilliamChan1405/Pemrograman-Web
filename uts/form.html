@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,14 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-primary text-white py-3">
+    <header class="bg-primary text-white py-3" itemscope itemtype="http://schema.org/WPHeader">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-auto">
-                    <img src="/uts/assets/logo elon.png" alt="Logo" class="img-fluid" style="max-width: 80px;">
+                    <img src="/uts/assets/logo elon.png" alt="Logo" class="img-fluid" style="max-width: 80px;" itemprop="logo">
                 </div>
                 <div class="col">
-                    <h1>Your Opinion on Elon Musk</h1>
+                    <h1 itemprop="headline">Your Opinion on Elon Musk</h1>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
     <div class="container mt-4">
         <div class="row">
             <!-- Sidebar -->
-            <aside class="col-12 col-md-4 col-lg-3 sidebar">
+            <aside class="col-12 col-md-4 col-lg-3 sidebar" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <h3>Navigation</h3>
                 <nav>
                     <ul class="nav flex-column">
@@ -36,24 +36,24 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="col-12 col-md-8 col-lg-9">
+            <main class="col-12 col-md-8 col-lg-9" itemscope itemtype="http://schema.org/FormAction">
                 <div class="d-flex justify-content-center">
                     <div class="container">
-                        <h2 class="text-center mb-4">Share Your Thoughts on Elon Musk's Projects</h2>
-                        <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
-                            <div class="form-group mb-3">
+                        <h2 class="text-center mb-4" itemprop="name">Share Your Thoughts on Elon Musk's Projects</h2>
+                        <form action="#" method="post" class="mx-auto" style="max-width: 600px;" itemscope itemtype="http://schema.org/OpinionAction">
+                            <div class="form-group mb-3" itemprop="agent" itemscope itemtype="http://schema.org/Person">
                                 <label for="name">Nama:</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
+                                <input type="text" id="name" name="name" class="form-control" required itemprop="name">
                             </div>
 
                             <div class="form-group mb-3">
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
+                                <input type="email" id="email" name="email" class="form-control" required itemprop="email">
                             </div>
 
                             <div class="form-group mb-3">
                                 <label for="birthdate">Tanggal Lahir:</label>
-                                <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+                                <input type="date" id="birthdate" name="birthdate" class="form-control" required itemprop="birthDate">
                             </div>
 
                             <div class="form-group mb-3">
@@ -82,7 +82,7 @@
 
                             <div class="form-group mb-4">
                                 <label for="comments">Komentar Tambahan:</label>
-                                <textarea id="comments" name="comments" rows="4" class="form-control"></textarea>
+                                <textarea id="comments" name="comments" rows="4" class="form-control" itemprop="comment"></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary w-100">Kirim Pendapat</button>
@@ -93,9 +93,9 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4">
+    <footer class="bg-dark text-white text-center py-3 mt-4" itemscope itemtype="http://schema.org/WPFooter">
         <div class="container">
-            <p>© 2024 William Chan. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2024 William Chan. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 

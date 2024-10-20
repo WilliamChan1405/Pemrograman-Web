@@ -3,7 +3,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #C5C6C7;
-    background-image: url(/uts/assets/cartoon-illustrator-elon-musk.jpg); /* Ganti dengan path gambar Anda */
+    background-image: url(../uts/assets/cartoon-illustrator-elon-musk.jpg); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

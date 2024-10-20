@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Pendapat - Idola Saya: Elon Musk</title>
+    <title>Your Opinion on Elon Musk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -12,10 +12,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-auto">
-                    <img src="/uts/assets/download.jpg" alt="Logo" class="img-fluid" style="max-width: 80px;">
+                    <img src="/uts/assets/logo elon.png" alt="Logo" class="img-fluid" style="max-width: 80px;">
                 </div>
                 <div class="col">
-                    <h1 class="mb-0">Idola Saya: Elon Musk</h1>
+                    <h1>Your Opinion on Elon Musk</h1>
                 </div>
             </div>
         </div>
@@ -23,82 +23,79 @@
 
     <div class="container mt-4">
         <div class="row">
-            <main class="col-md-8 col-lg-9" role="main">
-                <div class="form-container">
-                    <h2 class="mb-4 text-center">Formulir Pendapat tentang Elon Musk</h2>
-                    <form action="submit.html" method="GET">
-                        <div class="mb-3">
-                            <label for="nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                            <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Proyek Elon Musk yang Paling Anda Minati</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="proyek" id="spacex" value="SpaceX" required>
-                                <label class="form-check-label" for="spacex">SpaceX</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="proyek" id="tesla" value="Tesla">
-                                <label class="form-check-label" for="tesla">Tesla</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="proyek" id="neuralink" value="Neuralink">
-                                <label class="form-check-label" for="neuralink">Neuralink</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Aspek yang Anda Kagumi dari Elon Musk (Pilih semua yang sesuai)</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="aspek[]" id="inovasi" value="Inovasi">
-                                <label class="form-check-label" for="inovasi">Inovasi</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="aspek[]" id="visi" value="Visi">
-                                <label class="form-check-label" for="visi">Visi</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="aspek[]" id="kepemimpinan" value="Kepemimpinan">
-                                <label class="form-check-label" for="kepemimpinan">Kepemimpinan</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="komentar" class="form-label">Komentar Tambahan</label>
-                            <textarea class="form-control" id="komentar" name="komentar" rows="3"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password (untuk demonstrasi)</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-submit">Kirim Pendapat</button>
-                        </div>
-                    </form>
-                </div>
-            </main>
-            <aside class="col-md-4 col-lg-3 sidebar">
-                <h3>Menu Navigasi</h3>
+            <!-- Sidebar -->
+            <aside class="col-12 col-md-4 col-lg-3 sidebar">
+                <h3>Navigation</h3>
                 <nav>
                     <ul class="nav flex-column">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
-                        <li class="nav-item"><a href="form.html" class="nav-link active">Formulir Pendapat</a></li>
-                        <li class="nav-item"><a href="table.html" class="nav-link">Pencapaian Elon Musk</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link active">Your Opinion</a></li>
+                        <li class="nav-item"><a href="table.html" class="nav-link">Achievements</a></li>
                     </ul>
                 </nav>
             </aside>
+
+            <!-- Main Content -->
+            <main class="col-12 col-md-8 col-lg-9">
+                <div class="d-flex justify-content-center">
+                    <div class="container">
+                        <h2 class="text-center mb-4">Share Your Thoughts on Elon Musk's Projects</h2>
+                        <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
+                            <div class="form-group mb-3">
+                                <label for="name">Nama:</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="birthdate">Tanggal Lahir:</label>
+                                <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="project">Proyek Elon Musk yang Paling Anda Minati:</label>
+                                <select id="project" name="project" class="form-select" required>
+                                    <option value="">Pilih proyek</option>
+                                    <option value="SpaceX">SpaceX</option>
+                                    <option value="Tesla">Tesla</option>
+                                    <option value="SolarCity">SolarCity</option>
+                                    <option value="Neuralink">Neuralink</option>
+                                    <option value="The Boring Company">The Boring Company</option>
+                                    <option value="Starlink">Starlink</option>
+                                    <option value="Hyperloop">Hyperloop</option>
+                                    <option value="X (Twitter)">X (Twitter)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label>Aspek yang Anda Kagumi dari Elon Musk (Pilih semua yang sesuai):</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="aspects" value="Inovasi"> Inovasi</label>
+                                    <label><input type="checkbox" name="aspects" value="Visi"> Visi</label>
+                                    <label><input type="checkbox" name="aspects" value="Kepemimpinan"> Kepemimpinan</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label for="comments">Komentar Tambahan:</label>
+                                <textarea id="comments" name="comments" rows="4" class="form-control"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Kirim Pendapat</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">
         <div class="container">
-            <p>&copy; 2024 William Chan. Hak Cipta Dilindungi.</p>
+            <p>© 2024 William Chan. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 

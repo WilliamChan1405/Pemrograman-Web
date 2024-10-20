@@ -1,21 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #C5C6C7;
+    background-image: url(/uts/assets/cartoon-illustrator-elon-musk.jpg); /* Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 12, 16, 0.6); /* Overlay gelap untuk meningkatkan keterbacaan */
+    z-index: -1;
+}
+
+.navbar, footer {
+    background-color: rgba(31, 40, 51, 0.9); /* Semi-transparan */
+}
+
+.navbar-brand, .nav-link {
+    color: #66FCF1 !important;
+}
+
+h1, h2 {
+    color: #66FCF1;
+}
+
+.hero-section {
+    background-image: url('https://source.unsplash.com/random/1600x900/?elon-musk');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(11, 12, 16, 0.7);
+}
+
+.hero-content {
+    z-index: 1;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #66FCF1;
+    border-color: #66FCF1;
+    color: #0B0C10;
+}
+
+.btn-primary:hover {
+    background-color: #45A29E;
+    border-color: #45A29E;
+}
+
+.company-card {
+    background-color: rgba(31, 40, 51, 0.8); /* Semi-transparan */
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.company-card:hover {
+    transform: translateY(-10px);
+}
+
+.form-control, .form-select {
+    background-color: rgba(31, 40, 51, 0.8);
+    border-color: #45A29E;
+    color: #C5C6C7;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(43, 59, 78, 0.8);
+    border-color: #66FCF1;
+    color: #C5C6C7;
+    box-shadow: 0 0 0 0.25rem rgba(102, 252, 241, 0.25);
+}
+
+.table {
+    background-color: rgba(31, 40, 51, 0.8);
+    color: #C5C6C7;
+}
+
+.table thead th {
+    background-color: rgba(11, 12, 16, 0.8);
+    color: #66FCF1;
+    border-color: #45A29E;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(43, 59, 78, 0.8);
+}
+
+.social-icons img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-  background-color: #121212;
-  color: #ffffff;
-  scroll-behavior: smooth;
-  position: relative;
+/* Header */
+header {
+  background-color: #000000; /* Changed header background to black */
+  color: #C5C6C7;
 }
 
+/* Navbar */
 .navbar {
   overflow: hidden;
   position: fixed;
@@ -25,12 +138,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(11, 12, 16, 0.9);
   padding: 10px 0;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #C5C6C7;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,8 +152,8 @@ body {
 }
 
 .navbar a:hover {
-  background: #4CAF50;
-  color: #000000;
+  background: #45A29E;
+  color: #0B0C10;
 }
 
 .header-container {
@@ -53,7 +166,7 @@ body {
 .logo-container {
   padding: 5px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #C5C6C7;
   overflow: hidden;
   cursor: pointer;
   display: flex;
@@ -68,6 +181,7 @@ body {
   height: 80px;
 }
 
+/* Hero Section */
 .hero-container {
   position: relative;
   display: flex;
@@ -86,7 +200,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(11, 12, 16, 0.6);
 }
 
 .text-container {
@@ -97,37 +211,39 @@ body {
 .text-container h1 {
   font-size: 4rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #66FCF1;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .text-container p {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #C5C6C7;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
+/* Section Styles */
 .overview-container, .achievements-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #1E1E1E;
+  background-color: #1F2833;
 }
 
 .overview-container h2, .achievements-section h2 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #4CAF50;
+  color: #66FCF1;
 }
 
 .overview-container p {
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
-  color: #E1E1E1;
+  color: #C5C6C7;
 }
 
+/* Table Styles */
 .table-responsive {
   max-width: 800px;
   max-height: 500px;
@@ -138,42 +254,52 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #2C2C2C;
-  color: #ffffff;
+  background-color: #1F2833; 
+  color: #FFFFFF !important; 
 }
 
 table th, table td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #4CAF50;
+  border-bottom: 1px solid #45A29E; 
+  color: #FFFFFF !important; 
 }
 
 table th {
-  background-color: #4CAF50;
-  color: #000000;
+  background-color: #66FCF1; 
+  color: #0B0C10 !important; 
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #363636;
+  background-color: #0B0C10; 
+  color: #FFFFFF !important; 
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #1F2833; 
+  color: #FFFFFF !important; 
 }
 
 table tbody tr:hover {
-  background-color: #4A4A4A;
+  background-color: #FF5733; /* Changed highlight color to bright orange */
+  color: #FFFFFF !important; 
 }
 
 thead.sticky-top th {
   position: sticky;
   top: 0;
-  background-color: #4CAF50;
+  background-color: #66FCF1;
   z-index: 10;
 }
 
+/* Form Styles */
 form {
   max-width: 600px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #2C2C2C;
+  background-color: #1F2833;
   border-radius: 8px;
+  border: 1px solid #66FCF1;
 }
 
 .form-group {
@@ -184,7 +310,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #4CAF50;
+  color: #66FCF1;
 }
 
 input[type="text"],
@@ -195,15 +321,15 @@ textarea,
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #4CAF50;
-  background-color: #363636;
-  color: #ffffff;
+  border: 1px solid #66FCF1;
+  background-color: #0B0C10;
+  color: #C5C6C7;
   border-radius: 4px;
 }
 
 button[type="submit"] {
-  background-color: #4CAF50;
-  color: #000000;
+  background-color: #66FCF1;
+  color: #0B0C10;
   border: none;
   padding: 12px 20px;
   font-size: 1rem;
@@ -213,39 +339,69 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #45A29E;
 }
 
+/* Footer */
 footer {
-  background-color: #1E1E1E;
-  color: #ffffff;
+  background-color: #f6f6f6;
+  color: #C5C6C7;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
 }
 
-/* Responsive styles */
+/* Sidebar */
+.sidebar {
+  order: -1; 
+  background-color: #1F2833;
+  padding: 20px;
+  color: #C5C6C7;
+  height: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h3 {
+  color: #66FCF1;
+}
+
+.sidebar a {
+  color: #C5C6C7;
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #0B0C10;
+  background-color: #66FCF1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 768px) {
-  .text-container h1 {
-    font-size: 3rem;
+  .row {
+    flex-direction: column; 
   }
 
-  .text-container p {
-    font-size: 1.2rem;
-  }
-
-  .overview-container h2, .achievements-section h2 {
-    font-size: 2.5rem;
+  .sidebar {
+    order: 1; 
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .navbar {
-    flex-wrap: wrap;
+/* Aturan untuk layar XS */
+@media (max-width: 575.98px) {
+  .sidebar {
+    margin-bottom: 20px; 
   }
 
   .text-container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .text-container p {
@@ -257,20 +413,76 @@ footer {
   }
 }
 
-/* Scrollbar styles */
+/* Aturan untuk layar SM */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .text-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-container p {
+    font-size: 1.2rem;
+  }
+
+  .overview-container h2, .achievements-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Aturan untuk layar MD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .text-container h1 {
+    font-size: 3rem;
+  }
+
+  .text-container p {
+    font-size: 1.5rem;
+  }
+
+  .overview-container h2, .achievements-section h2 {
+    font-size: 2.75rem;
+  }
+}
+
+/* Aturan untuk layar LG */
+@media (min-width: 992px) {
+  .text-container h1 {
+    font-size: 4rem;
+  }
+
+  .text-container p {
+    font-size: 1.75rem;
+  }
+
+  .overview-container h2, .achievements-section h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #1E1E1E;
+  background-color: #1F2833;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4CAF50;
+  background-color: #66FCF1;
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #45a049;
+  background-color: #45A29E;
+}
+
+/* Social Icons */
+.social-icons img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(2.0); 
 }

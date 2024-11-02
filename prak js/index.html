@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛒 Keranjang Belanja</h1>
+            <button id="themeToggle" class="theme-toggle">
+                🌙
+            </button>
+        </div>
+
+        <div class="form-container">
+            <div class="input-group">
+                <input type="text" id="itemName" placeholder="Nama Barang" required>
+                <input type="number" id="itemPrice" placeholder="Harga" required>
+                <button onclick="addItem()" class="add-btn">Tambah Barang</button>
+            </div>
+        </div>
+
+        <div class="discount-controls">
+            <h3>Atur Diskon Manual</h3>
+            <div class="discount-buttons">
+                <button onclick="setManualDiscount(0.05)" class="discount-btn">5%</button>
+                <button onclick="setManualDiscount(0.1)" class="discount-btn">10%</button>
+                <button onclick="setManualDiscount(0.15)" class="discount-btn">15%</button>
+                <button onclick="setManualDiscount(0.2)" class="discount-btn">20%</button>
+                <button onclick="setManualDiscount(0.25)" class="discount-btn">25%</button>
+                <button onclick="resetDiscount()" class="discount-btn reset">Reset</button>
+            </div>
+            <div class="custom-discount">
+                <input type="number" id="customDiscount" placeholder="Diskon khusus (%)" min="0" max="100">
+                <button onclick="setCustomDiscount()" class="discount-btn custom">Terapkan</button>
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <div id="cartItems"></div>
+            <div id="summary" class="summary"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
